@@ -5,16 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "build": "ncp ./node_modules/@emerald/ngstyle/assets ./assets && webpack",
-    "dev": "webpack serve",
-    "lint": "eslint --cache -c ./node_modules/@smartfm/styleguides/eslintrc.json --resolve-plugins-relative-to . .",
-    "lintfix": "eslint --fix -c ./node_modules/@smartfm/styleguides/eslintrc.json --resolve-plugins-relative-to . .",
-    "start": "npx envsub --env NX_ENV .dist/bundle.js && HTTPS=true node server/index.js",
-    "test:unit": "node --experimental-vm-modules ./node_modules/.bin/jest --onlyChanged --colors --passWithNoTests",
-    "test:integration": "echo 'no integration tests'",
-    "test:e2e": "echo 'no integration tests'",
-    "webpack:analyze": "npx webpack --json > .webpack.stats.json && npx webpack-bundle-analyzer .webpack.stats.json"
   },
   "repository": {
     "type": "git",
