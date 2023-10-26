@@ -14,11 +14,11 @@
   "dependencies": {
     "@emerald/reactmaterial": "^1.0.0-1105664",
     "@emerald/ngmaterial": "1.1.1",
-    "emerald/core":"1.1.1",
-    "emerald/ngcore":"1.1",
-    "emerald/ngstyle":"1.11.1",
-    "emerald/sbcore":"1.1.1",
-    "ea/grid": "1.1.1",
+    "@emerald/core":"1.1.1",
+    "@emerald/ngcore":"1.1",
+    "@emerald/ngstyle":"1.11.1",
+    "@emerald/sbcore":"1.1.1",
+    "@ea/grid": "1.1.1",
     "@babel/plugin-proposal-class-properties": "^7.18.6"
   },
   "devDependencies": {
