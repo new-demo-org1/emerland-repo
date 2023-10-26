@@ -1,0 +1,31 @@
+{
+  "name": "admin-ui",
+  "version": "1.0.0",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "build": "ncp ./node_modules/@emerald/ngstyle/assets ./assets && webpack",
+    "dev": "webpack serve",
+    "lint": "eslint --cache -c ./node_modules/@smartfm/styleguides/eslintrc.json --resolve-plugins-relative-to . .",
+    "lintfix": "eslint --fix -c ./node_modules/@smartfm/styleguides/eslintrc.json --resolve-plugins-relative-to . .",
+    "start": "npx envsub --env NX_ENV .dist/bundle.js && HTTPS=true node server/index.js",
+    "test:unit": "node --experimental-vm-modules ./node_modules/.bin/jest --onlyChanged --colors --passWithNoTests",
+    "test:integration": "echo 'no integration tests'",
+    "test:e2e": "echo 'no integration tests'",
+    "webpack:analyze": "npx webpack --json > .webpack.stats.json && npx webpack-bundle-analyzer .webpack.stats.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://cbre@dev.azure.com/cbre/SmartFM/_git/admin-ui"
+  },
+  "author": "CBRE Inc.",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@emerald/reactmaterial": "^1.0.0-1105664"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6"
+  }
+}
